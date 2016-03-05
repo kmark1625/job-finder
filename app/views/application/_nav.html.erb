@@ -2,9 +2,14 @@
   <ul>
     <li>
       <%= link_to "Job Finder", root_path, class: "title" %>
+      <%= link_to "Companies", root_path %>
+      <%= link_to "Jobs", root_path %>
       <span>
-        <%= link_to "Companies", root_path %>
-        <%= link_to "Jobs", root_path %>
+        <% if current_user %>
+          Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+        <% else %>
+          <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+        <% end %>
       </span>
     </li>
   </ul>

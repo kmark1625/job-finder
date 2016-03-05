@@ -22,6 +22,7 @@ gem "sass-rails", "~> 5.0"
 gem "simple_form"
 gem "title"
 gem "uglifier"
+gem "bcrypt", "~> 3.1.7"
 
 group :development do
   gem "quiet_assets"

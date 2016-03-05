@@ -1,0 +1,26 @@
+nav {
+  border-bottom: 1px solid $base-border-color;
+  margin: em(30) 0;
+
+  ul {
+    margin-bottom: em(10);
+  }
+
+  span {
+    float: right;
+    padding-top: .5em;
+    padding-right: 1em;
+  }
+
+  a {
+    padding-right: .5em;
+  }
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: 700;
+  letterspacing: 4px;
+  text-transform: uppercase;
+  padding-left: 1em;
+}
